@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<div class="container-01">
+    <div class="" id="nav-1">
+        <div class="width">
+            <div class="side-01">
+                <i class="fa fa-envelope"></i><span style="font-weight: 500;">info@sfoly.com</span>
+            </div>
+
+            <div class="side-02">
+
+                <i class='fab fa-facebook'></i>
+                <i class="fab fa-linkedin"></i>
+                <i class='fab fa-instagram'></i>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="nav-2 navbar navbar-inverse navbar-fixed-top" class="sticky-navbar">
+    <div class="width-2">
+        <div class="content" style="cursor: pointer;">
+            <img src="../../assets/download.png" alt=""><span id="title">Springfield Olympiads.</span>
+        </div>
+
+        <div class="lines" (click)="HamburgShow()">
+            <div class="hamburg"></div>
+            <div class="hamburg"></div>
+            <div class="hamburg"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-01">
+    <!-- <div id="nav-3"> -->
+    <div id="nav-3" class="container-fluid">
+        <div class="width-05">
+            <div class="side-n3-01">
+                <p style="color: black;font-size: 30px;font-family: 'Roboto', sans-serif;"> Student Registration</p>
+            </div>
+
+            <div class="side-n3-02">
+                <p style="color: black;font-family: 'Open Sans', sans-serif;"><span style="color: blue;cursor: pointer; ">Home</span><span> &nbsp; / &nbsp;
+                        Student
+                        Registration</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</div>
+
+
+<div class="container-01">
+    <!-- Pop-up -->
+    <div class="popup-container" *ngIf="ShowModal">
+        <div (click)="cancel()">
+            <div class="cancel">&#x2715;</div>
+        </div>
+        <div class="click-window">
+            <div class="wide-box">
+                <ul>
+                    <li class="hovring">Home</li>
+                    <li class="hovring">About</li>
+                    <li class="dropdown">
+                        <span (click)="show1()">
+                            <span>
+                                Olympiads
+                            </span>
+                            <span class="arrow">&#9660;</span>
+                        </span>
+                        <ul class="dropdown-content" *ngIf="showoption1">
+                            <li class="hovring sub-1">SISO</li>
+                            <li class="hovring sub-1">SIMO</li>
+                            <li class="hovring sub-1">SICO</li>
+                            <li class="hovring sub-1">SIEO</li>
+                            <li class="hovring sub-1">Grade Olympiads</li>
+                            <li class="hovring sub-1">Finance Olympiads</li>
+                        </ul>
+                    </li>
+                    <li>FAQ's</li>
+                    <li class="dropdown">
+                        <span (click)="show1()">
+                            <span>
+                                Register
+                            </span>
+                            <span class="arrow-1">&#9660;</span>
+                        </span>
+                        <ul class="dropdown-content" *ngIf="showoption1">
+                            <li class="hovring sub-1">Student Register</li>
+                            <li class="hovring sub-1">Institute Register</li>
+                            <li class="hovring sub-1">Coordinator Register</li>
+                        </ul>
+                    </li>
+                    <li>Contact Us</li>
+                    <li>Institute Login</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
