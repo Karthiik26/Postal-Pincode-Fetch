@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik+Doodle+Shadow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); */
+
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Open Sans Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    /* Use the desired font-family for the body element */
+    font-family: 'Roboto', sans-serif;
+}
